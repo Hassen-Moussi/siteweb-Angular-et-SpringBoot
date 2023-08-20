@@ -1,0 +1,40 @@
+<div class=>
+    <div >
+        
+        <div >
+     
+
+            <form (ngSubmit)="update2()" action="" class="mt-5 p-5">
+                <h5 >Update </h5>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="FirstName" [(ngModel)]="utilisateur.firstName">
+                    <label for="floatingInput">FirstName</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control"   name="LastName" [(ngModel)]="utilisateur.lastName">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control"   name="PassWord" [(ngModel)]="utilisateur.password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="Email" class="form-control"   name="Email" [(ngModel)]="utilisateur.email">
+                    <label for="floatingPassword">Email</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"   name="Activation" [(ngModel)]="utilisateur.active">
+                    <label for="floatingPassword">Activation</label>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="submit"  >Update</button>
+                  </div>
+
+                  
+            </form>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>

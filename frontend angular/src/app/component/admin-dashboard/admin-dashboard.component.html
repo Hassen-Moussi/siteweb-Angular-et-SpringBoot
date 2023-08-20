@@ -1,0 +1,562 @@
+<div class="color" >
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+    <!-- Sidebar Toggle (Topbar) -->
+    <form class="form-inline">
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+        </button>
+    </form>
+
+    <!-- Topbar Search -->
+    <form
+        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2" [(ngModel)]="searchText" autocomplete="on">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+<ul class="navbar-nav ml-auto">
+
+    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+    <li class="nav-item dropdown no-arrow d-sm-none">
+        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-search fa-fw"></i>
+        </a>
+        <!-- Dropdown - Messages -->
+        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+            aria-labelledby="searchDropdown">
+            <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small"
+                        placeholder="Search for..." aria-label="Search"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </li>
+
+    <!-- Nav Item - Alerts -->
+    <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <!-- Counter - Alerts -->
+            <span class="badge badge-danger badge-counter">3+</span>
+        </a>
+        <!-- Dropdown - Alerts -->
+        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+            aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">
+                Alerts Center
+            </h6>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+            </a>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                </div>
+            </a>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+            </a>
+            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+        </div>
+    </li>
+
+    <!-- Nav Item - Messages -->
+    <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <!-- Counter - Messages -->
+            <span class="badge badge-danger badge-counter">7</span>
+        </a>
+        <!-- Dropdown - Messages -->
+        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+            aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">
+                Message Center
+            </h6>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                        alt="...">
+                    <div class="status-indicator bg-success"></div>
+                </div>
+                <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                        problem I've been having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                </div>
+            </a>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                        alt="...">
+                    <div class="status-indicator"></div>
+                </div>
+                <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how
+                        would you like them sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                </div>
+            </a>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                        alt="...">
+                    <div class="status-indicator bg-warning"></div>
+                </div>
+                <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with
+                        the progress so far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                </div>
+            </a>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                        alt="...">
+                    <div class="status-indicator bg-success"></div>
+                </div>
+                <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                        told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                </div>
+            </a>
+            <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+        </div>
+    </li>
+
+    <div class="topbar-divider d-none d-sm-block"></div>
+
+    <!-- Nav Item - User Information -->
+    <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{username}}</span>
+            <img class="img-profile rounded-circle"
+                src="img/undraw_profile.svg">
+        </a>
+        <!-- Dropdown - User Information -->
+        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+            aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="profil">
+                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                Profile
+            </a>
+            <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                Settings
+            </a>
+            <a class="dropdown-item" href="#">
+                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                Activity Log
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="logout()" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                Logout
+            </a>
+        </div>
+    </li>
+
+</ul>
+
+</nav>
+<nav  class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<div class="input-group">
+    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+        aria-label="Search" aria-describedby="basic-addon2" [(ngModel)]="name" autocomplete="on">
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="searchbyusername(name)" type="button">
+            <i class="fas fa-search fa-sm"></i>
+        </button>
+        <h1>All Responsable RH => {{this.somme.length-1}}</h1>
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th >image</th>
+        <th >Id</th>
+        <th >UserName</th>
+        <th >Email</th>
+        <th > Role </th>
+        <th > Etat </th>
+
+        <th > Action </th>
+      </tr>
+    </thead>
+    <tbody *ngIf="name == ''">
+        <tr *ngFor="let user of data">
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+           
+          </div>
+        </td>
+        
+            <td >{{user['id']}}</td>
+
+            <td class="serial">{{user['username']}}</td>
+            <td class="serial">{{user['email']}}</td>
+            <td class="serial">{{user['role']}}</td>
+             <td class="serial"><div class="switch-wrap d-flex justify-content-between" >
+                   
+                        <input class="confirm-switch" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="user['active']"   
+
+
+                        
+                        />
+                        </div></td>
+                        <td ><button class="genric-btn success circle" type="submit" (click)="updateuser(user['id'])">Update</button>
+                        
+                        
+                          
+                            <button class="genric-btn warning-border radius" type="submit" (click)="delete(user['id'])">Delete</button>
+                                 </td>
+      
+      </tr>
+    </tbody>
+    <tbody *ngIf="name != ''">
+        <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+           
+          </div>
+        </td>
+        
+            <td >{{user.id}}</td>
+
+            <td class="serial">{{user.username}}</td>
+            <td class="serial">{{user.email}}</td>
+            <td class="serial">{{user.role}}</td>
+             <td class="serial"><div class="switch-wrap d-flex justify-content-between" >
+                   
+                        <input class="confirm-switch" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="user['active']"   
+
+
+                        
+                        />
+                        </div></td>
+                        <td ><button class="genric-btn success circle" type="submit" (click)="updateuser(user.id)">Update</button>
+                        
+                        
+                          
+                            <button class="genric-btn warning-border radius" type="submit" (click)="delete(user['id'])">Delete</button>
+                                 </td>
+      
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    
+</div>
+   
+
+<nav  class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <div class="input-group">
+        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+            aria-label="Search" aria-describedby="basic-addon2" [(ngModel)]="lastname" autocomplete="on">
+        <div class="input-group-append">
+            <button class="btn btn-primary" (click)="searchbylastname(lastname)" type="button">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+  <hr>
+  <h1>All Condidat => {{this.somme1.length}}</h1>
+
+
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th >image</th>
+        <th >Id</th>
+                    <th >FirstName</th>
+                    <th >LastName</th>
+                    <th > Email </th>
+                    <th > Age </th>
+
+                    <th > Action </th>
+      </tr>
+    </thead>
+    <tbody *ngIf="lastname == ''">
+        <tr *ngFor="let candidat of data2 ">
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+           
+          </div>
+        </td>
+        
+        <td class="serial">{{candidat['id']}}</td>
+
+        <td class="serial">{{candidat['firstName']}}</td>
+        <td class="serial">{{candidat['lastName']}}</td>
+        <td class="serial">{{candidat['email']}}</td>
+        <td class="serial">{{candidat['age']}}</td>
+         
+        <td><button class="genric-btn success circle" type="submit" (click)="updateuser2(candidat['id'])">Update</button>
+                
+        
+                    
+                        <button class="genric-btn warning-border radius" type="submit" (click)="delete2(candidat['id'])">Delete</button>
+                             </td>
+    </tr>
+    </tbody>
+    <tbody *ngIf="lastname != ''">
+        <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+           
+          </div>
+        </td>
+        
+        <td class="serial">{{utilisateur.id}}</td>
+
+        <td class="serial">{{utilisateur.firstName}}</td>
+        <td class="serial">{{utilisateur.lastName}}</td>
+        <td class="serial">{{utilisateur.email}}</td>
+        <td class="serial">{{utilisateur.age}}</td>
+         
+        <td><button class="genric-btn success circle" type="submit" (click)="updateuser2(utilisateur.id)">Update</button>
+                
+        
+                    
+                        <button class="genric-btn warning-border radius" type="submit" (click)="delete2(utilisateur.id)">Delete</button>
+                             </td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Dashborad Admin</h1>
+        </div>
+        <ul>
+            <li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span>Offres</span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span></span> </li>
+          
+            <li><img src="help-web-button.png" alt="">&nbsp; <span>Help</span></li>
+            <li><img src="settings.png" alt="">&nbsp;<span>Settings</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="notifications.png" alt="">
+                    <div class="img-case">
+                        <img src="user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h3> RH founded</h3>
+                        <h1>{{this.somme.length-1}}</h1>
+                        
+                    </div>
+                    <div class="icon-case">
+                        <img src="students.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h3> Candidat Founded </h3>
+                        <h1>{{this.somme1.length}}</h1>
+                        
+                    </div>
+                    <div class="icon-case">
+                        <img src="teachers.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>0</h1>
+                        <h3>Condidat</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="schools.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>0</h1>
+                        <h3>Offres</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="income.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Candidat</h2>
+                        
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Id</th>
+                            <th>Firstname</th>
+                            <th>LastName</th>
+                            <th> Email </th>
+                            <th> Age</th>
+                            <th> Action</th>
+                          
+                          
+                        </tr>
+                        <tr *ngFor="let condidat of data2">
+                            <td>{{condidat['id']}}</td>
+
+                            <td>{{condidat['firstName']}}</td>
+                            <td>{{condidat['lastName']}}</td>
+                            <td>{{condidat['email']}}</td>
+                            <td>{{condidat['age']}}</td>
+                       
+
+                        <td><button class="btn" type="submit" (click)="updateuser2(condidat['id'])">Update</button>
+                            
+            </td>
+                        <td>
+                            <button class="btn" type="submit" (click)="delete2(condidat['id'])">Delete</button>
+                                 </td>
+                                </tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>RH</h2>
+                        
+                    </div>
+                    <table  >
+                        <tr>
+                            <th>Id</th>
+                            <th>UserName</th>
+                            <th>Email</th>
+                            <th> Role </th>
+                            <th> Etat </th>
+                          
+                          
+                        </tr>
+                        <tr *ngFor="let user of data">
+                            <td>{{user['id']}}</td>
+
+                            <td>{{user['username']}}</td>
+                            <td>{{user['email']}}</td>
+                            <td>{{user['role']}}</td>
+                            <td></td>
+                           
+                            <td><div class="form-check form-switch" >
+                           
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="user['active']"   
+        
+
+                                
+                                />
+                                </div></td>
+
+                            <td><button class="btn" type="submit" (click)="updateuser(user['id'])">Update</button>
+                                
+                </td>
+                  <td>
+                    <button class="btn" type="submit" (click)="delete(user['id'])">Delete</button>
+                         </td>
+
+
+                          
+
+                        </tr>
+                      
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>-->

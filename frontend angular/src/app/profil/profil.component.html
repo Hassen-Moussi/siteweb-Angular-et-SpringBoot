@@ -1,0 +1,73 @@
+<section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">User</a></li>
+              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <form (ngSubmit)="update()" class="mt-5 p-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img src="url" alt="avatar"
+                class="rounded-circle img-fluid" style="width: 150px;">
+                <input type="file">
+              <h5 class="my-3">{{username}}</h5>
+    
+              <div class="d-flex justify-content-center mb-2">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="button" routerLink="admin" class="btn btn-outline-primary ms-1">Go Back</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Full Name</p>
+                </div>
+                <div class="col-sm-9">
+                    <img src="user.username">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="email" name="email" [(ngModel)]="user.email">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Password</p>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="user.password">
+                </div>
+              </div>
+              
+            
+              
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </form>
+    </div>
+  </section>
+   

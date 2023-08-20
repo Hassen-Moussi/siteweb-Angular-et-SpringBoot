@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-4 mt-3 mb-2">
+            <h3 class="text-success text-center"><b>Add offre </b></h3>
+
+            <form action="" class="mt-5 p-5">
+                <h5 class="text-primary mb-3">gestion offre </h5>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  placeholder="titre" name="titre" [(ngModel)]="titre"  ob >
+                    <label for="floatingInput">Title </label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input  class="form-control valid"  id="description" type="text"  placeholder="Description" name="description" [(ngModel)]="description" required="true">
+                    <label for="floatingInput">Description</label>
+                </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  placeholder="addresse" name="addresse" [(ngModel)]="adresse" required="true">
+                    <label for="floatingPassword">Address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control"  placeholder="Date d'expiration" name="datexp" [(ngModel)]="datexp" required="true">
+                    <label for="floatingPassword">Date d'expiration</label>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="button" (click)="addoffre()"   >Add</button>
+                  </div>
+
+                  
+            </form>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,153 @@
+<div class="container-fluid">
+  <div class="row">
+      
+      <div class="col-md-4 mt-3 mb-2">
+          <h3 class="text-success text-center"><b>Add candidature </b></h3>
+
+          <form action="" class="mt-5 p-5">
+              <h5 class="text-primary mb-3">gestion candidature </h5>
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control"  placeholder="firstname" name="firstname" [(ngModel)]="firstname">
+                  <label for="floatingInput">firstname </label>
+              </div>
+              <div class="form-floating mb-3">
+                  <input  class="form-control valid" type="text"  placeholder="lastname" name="lastname" [(ngModel)]="lastname" required="true">
+                  <label for="floatingInput">lastname</label>
+              </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control"  placeholder="email" name="email" [(ngModel)]="email" >
+                  <label for="floatingPassword">email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control"  placeholder="experience" name="experience" [(ngModel)]="experience" >
+                  <label for="floatingPassword">experience</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control"  placeholder="phone number" name="numtel" [(ngModel)]="telnum" >
+                  <label for="floatingPassword">Phone Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control"  placeholder="cv" name="cv" [(ngModel)]="cv" >
+                  <label for="floatingPassword">cv</label>
+                </div>
+                
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-outline-success me-md-2" type="button" (click)="addcandidature()">Add</button>
+                </div>
+
+                
+          </form>
+      </div>
+      <div class="col-md-2">
+      </div>
+  </div>
+</div>
+<div class="col-lg-8">
+  <div class="card mb-4">
+    <div class="card-body">
+      <form action="" (ngSubmit)="update2()" class="mt-5 p-5">
+       
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control"  placeholder="FirstName" name="firstname" [(ngModel)]="utilisateur.firstName" required="required" >
+            <label for="floatingInput">Your FirstName</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="LastName" name="lastname" [(ngModel)]="utilisateur.lastName" required="required">
+            <label for="floatingInput">Your LastName</label>
+        </div>
+          <div class="form-floating mb-3">
+            <input type="texe" class="form-control" id="floatingPassword" placeholder="Age" name="age" [(ngModel)]="utilisateur.age" required="required">
+            <label for="floatingPassword">Your Age</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="Email" class="form-control" id="floatingPassword" placeholder="Email" name="email" [(ngModel)]="utilisateur.email" required="required">
+            <label for="floatingPassword">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="utilisateur.password" required="required">
+            <label for="floatingPassword">Your Password</label>
+          </div>
+          <hr>
+          <div class="add-on ng-binding mb-3">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="Phone" name="Phone Number" [(ngModel)]="utilisateur.tel" [required]="true" [maxLength]="8"[minlength]="8" required>
+              <label for="floatingPassword">Phone</label>
+            </div>
+          <hr>
+          <h3>Your education </h3>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" value="bac" id="flexRadioDefault2" [(ngModel)]="utilisateur.etude"  >
+              <label class="form-check-label" for="flexRadioDefault2">
+                Bac
+              </label>
+            </div>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" value="bac+3" id="flexRadioDefault1" [(ngModel)]="utilisateur.etude">
+              <label class="form-check-label" for="flexRadioDefault1">
+               Bac+3
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="bac+5" [(ngModel)]="utilisateur.etude">
+              <label class="form-check-label" for="flexRadioDefault2">
+               Bac+5
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="ingenieur" [(ngModel)]="utilisateur.etude" >
+              <label class="form-check-label" for="flexRadioDefault2">
+               Ingenieur
+              </label>
+            </div>
+            <hr>
+            
+           
+  
+      
+          <h3>I'm a</h3>
+          
+          <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" value="homme" [(ngModel)]="utilisateur.genre">
+              <label class="custom-control-label" for="defaultGroupExample1">Homme</label>
+            </div>
+            
+            
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" value="famme" [(ngModel)]="utilisateur.genre" >
+              <label class="custom-control-label" for="defaultGroupExample2">Famme</label>
+            </div>
+            
+            <hr>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="Informatique /electrcity/..." name="sector" [(ngModel)]="utilisateur.formation"   required>
+              <label for="floatingPassword">Training sector</label>
+            </div>
+            <hr>
+            
+             
+            
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control"  placeholder="Languages" name="language" [(ngModel)]="utilisateur.competanceLi" required="required" >
+              <label for="floatingInput">Your Language</label>
+          </div>
+              
+          
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control"  placeholder="Skills" name="Skilles" [(ngModel)]="utilisateur.competence" required="required" >
+              <label for="floatingInput">Your Skills</label>
+          </div>
+          
+            
+             
+           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-outline-success me-md-2" type="submit"    >Update</button>
+           </div>
+
+          
+    </form>
+      
+    </div>
+  </div>
+  
+</div>

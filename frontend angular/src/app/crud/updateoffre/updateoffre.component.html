@@ -1,0 +1,36 @@
+<div class=>
+    <div >
+        
+        <div >
+     
+
+            <form (ngSubmit)="updateoffre()" action="" class="mt-5 p-5">
+                <h5 >Update offre </h5>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="titre" [(ngModel)]="offre.titre">
+                    <label for="floatingInput">Title</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control"   name="adresse" [(ngModel)]="offre.adresse">
+                    <label for="floatingInput">address</label>
+                </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"   name="description" [(ngModel)]="offre.description">
+                    <label for="floatingPassword">Description</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"   name="date" [(ngModel)]="offre.datexp">
+                    <label for="floatingPassword">Date d'expiration</label>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="submit"  >Update</button>
+                  </div>
+
+                  
+            </form>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
