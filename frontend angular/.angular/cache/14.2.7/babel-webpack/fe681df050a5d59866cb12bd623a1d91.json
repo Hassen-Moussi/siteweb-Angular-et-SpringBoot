@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Utilisateur {\n  constructor() {\n    this.email = '';\n    this.firstName = '';\n    this.lastName = '';\n    this.age = '';\n    this.password = '';\n    this.competanceLi = '';\n    this.competence = '';\n    this.formation = '';\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

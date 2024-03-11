@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Offre {\n  constructor() {\n    this.titre = '';\n    this.adresse = '';\n    this.description = '';\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
